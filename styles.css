@@ -1,0 +1,51 @@
+body {
+  background-color: lightgray;
+  max-width: 500px;
+  margin: auto;
+}
+
+
+.board {
+    display: grid;
+    height: 500px;
+    width: 500px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border: 1px solid black;
+    gap: 2px;
+    padding: 2px;
+    background-color: yellow;
+  }
+  
+  .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 6rem;
+    border: 1px solid grey;
+    background: lightyellow;
+    cursor: pointer;
+  }
+
+form {
+    display: grid;
+}
+
+label {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+input {
+  height: 30px;
+  width: auto;
+  font-size: 24px;
+}
+
+.start,
+.restart {
+  margin-top: 10px;
+  background-color: lightyellow;
+  border-radius: 8px;
+}
